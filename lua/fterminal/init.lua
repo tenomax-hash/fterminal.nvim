@@ -54,7 +54,7 @@ function M.setup(opts)
 	opts = opts or {}
 
 	-- Escape from terminal to normal mode
-    	vim.keymap.set("t","jj", "<c-\\><c-n>", { buffer = false, desc = "Exit terminal to normal" })
+    	vim.keymap.set("t","<Esc><Esc>", "<c-\\><c-n>", { buffer = false, desc = "Exit terminal to normal" })
 
 
 	-- Create user command
