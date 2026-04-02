@@ -60,7 +60,8 @@ function M.setup(opts)
 	vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
 
 	-- Set default <leader>tt toggle; allow override via opts.keys
-	local key = opts.keys or "<leader>tt"
+	-- local key = opts.keys or "<leader>tt"
+	local key = opts.keys or "<F10>"
 	vim.keymap.set("n", key, toggle_terminal, { desc = "Toggle floating terminal" })
 end
 
